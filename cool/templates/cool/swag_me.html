@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swag Me</title>
+    <link rel="stylesheet" href="{% static 'cool/css/page2.css'%}">
+    <link rel="stylesheet" href="{% static 'cool/css/common.css'%}">
+    <script src="{% static 'cool/script/common.js' %}"></script>
+    <script src="{% static 'cool/script/page2.js' %}"></script>
 </head>
-<body style="height: 100vh; display:flex; flex-direction:column; align-items:center; justify-content:center">
-    <h1 style="font-size: 328px;">👉😎👈</h1>
-    
+<body>
+    <div class="img" id="image-box">
+        <img src="/static/cool/Images/common.png" alt="">
+    </div>
+    <p id="para"></p>
+    <button onclick="animate_img()">
+        Click Me
+    </button>
+    <button onclick="showText()">
+        Also Me
+    </button>
 </body>
 </html>
