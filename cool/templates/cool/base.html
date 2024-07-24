@@ -14,5 +14,15 @@
     <h2>It multiplies by 3</h2>
     <p>Original: {{number}}</p>
     <p>Multiplied: {{ number|multiply:3 }}</p>
+
+    <br>
+    <br>
+        {% for student in students%}
+        <ul>
+            <li>{{ student.name }}</li>
+            <li>{{ student.date_birth}}</li>
+            <li>{{ student.address }}</li>
+        </ul>
+        {% endfor %}
 </body>
 </html>
